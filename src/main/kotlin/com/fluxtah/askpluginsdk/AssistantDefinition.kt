@@ -6,7 +6,10 @@
 
 package com.fluxtah.askpluginsdk
 
+import com.fluxtah.askpluginsdk.logging.AskLogger
+
 abstract class AssistantDefinition(
+    val logger: AskLogger,
     val id: String,
     val name: String,
     val model: String,
@@ -16,4 +19,3 @@ abstract class AssistantDefinition(
     val instructions: String,
     val functions: Any
 )
-
