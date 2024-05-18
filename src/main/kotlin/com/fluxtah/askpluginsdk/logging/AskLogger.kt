@@ -13,7 +13,7 @@ class AskLogger {
         }
 
         if (level >= logLevel) {
-            println("[$level] $message")
+            println("${level.name} $message")
         }
     }
 }
